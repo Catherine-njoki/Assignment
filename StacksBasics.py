@@ -18,8 +18,8 @@ class SimpleStack:
     def __init__(self):
         self.items = []  # initialize an empty list
 
-    def __init__(self):
-        return len(self.items) == 0  # returns True if stack is empty otherwise returns false
+    def is_empty(self):
+        return len(self.items) ==0
 
     def push(self, item):
         self.items.append(item)  # adding an item at the top of the stack
@@ -44,6 +44,7 @@ class SimpleStack:
 
 if __name__ == "main":
     stack1 = SimpleStack()
+
     stack1.push(1000)  # entered first
     stack1.push(2000)
     stack1.push(3000)  # at the top
